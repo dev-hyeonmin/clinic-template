@@ -5,17 +5,18 @@ const menu = [
   { href: '/', label: 'Procedure' },
   { href: '/', label: 'Promotion' },
   { href: '/', label: 'Notice' },
+  { href: '/', label: 'Contact' },
 ];
 
-export default function Menu() {
+interface MenuProps {
+  className?: string;
+}
+
+export default function Menu({ className }: MenuProps) {
   return (
     <>
       {menu.map((item, index) => (
-        <Link
-          key={`menu-${index}`}
-          href={`/${item.href}`}
-          className="text-foreground text-3xl font-medium"
-        >
+        <Link key={`menu-${index}`} href={`/${item.href}`} className={className}>
           {item.label}
         </Link>
       ))}
