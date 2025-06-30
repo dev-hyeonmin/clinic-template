@@ -17,6 +17,10 @@
   .site-width {
     @apply max-w-7xl mx-auto px-4;
   }
+
+  .enter-line {
+    @apply inline md:block;
+  }
 }
 
 /* dark mode
