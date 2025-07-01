@@ -7,8 +7,11 @@ interface NoticePageProps {
 
 export default function NoticePage({ noticeList }: NoticePageProps) {
   return (
-    <div className="offset">
-      <NoticeList noticeList={noticeList} />
+    <div className="body-offset">
+      <div className="site-width py-12">
+        <h1 className="text-2xl font-bold">Notice</h1>
+        <NoticeList noticeList={noticeList} />
+      </div>
     </div>
   );
 }

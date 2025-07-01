@@ -22,7 +22,7 @@
     @apply inline md:block;
   }
 
-  .offset {
+  .body-offset {
     @apply pt-15;
   }
 }

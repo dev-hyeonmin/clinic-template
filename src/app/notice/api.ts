@@ -9,6 +9,15 @@ export async function getNoticeList() {
   return notices;
 }
 
+export async function getNotice(id: string) {
+  // const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/example`, {
+  //     next : {revalidate: 60}
+  // });
+  // const data = await res.json();
+
+  return notices.find((notice) => notice.id === Number(id));
+}
+
 const notices: Notice[] = [
   {
     id: 1,
