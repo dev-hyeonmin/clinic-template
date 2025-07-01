@@ -21,6 +21,10 @@
   .enter-line {
     @apply inline md:block;
   }
+
+  .offset {
+    @apply pt-15;
+  }
 }
 
 /* dark mode
