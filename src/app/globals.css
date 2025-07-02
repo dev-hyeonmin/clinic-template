@@ -22,8 +22,8 @@
     @apply inline md:block;
   }
 
-  .body-offset {
-    @apply pt-15;
+  .header-offset {
+    @apply pt-15 md:pt-[84px];
   }
 }
 

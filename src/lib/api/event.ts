@@ -1,0 +1,118 @@
+// /lib/api/eventGroups.ts
+
+import { EventData } from '@/app/types/event';
+
+export async function getEventsByGroupId(id: number | string): Promise<EventData[] | null> {
+  return events.filter((event) => event.event_group_id === Number(id)) || null;
+}
+
+export const events: EventData[] = [
+  {
+    id: 1,
+    title: '봄맞이 스페셜 이벤트',
+    description: '따뜻한 봄을 맞이하여 특별 할인 진행 중!',
+    original_price: 100000,
+    sale_price: 80000,
+    created_at: '2025-03-01T09:00:00Z',
+    event_group_id: 1,
+  },
+  {
+    id: 11,
+    title: '봄맞이 스페셜 이벤트',
+    description: '따뜻한 봄을 맞이하여 특별 할인 진행 중!',
+    original_price: 100000,
+    sale_price: 80000,
+    created_at: '2025-03-01T09:00:00Z',
+    event_group_id: 1,
+  },
+  {
+    id: 12,
+    title: '봄맞이 스페셜 이벤트',
+    description: '따뜻한 봄을 맞이하여 특별 할인 진행 중!',
+    original_price: 100000,
+    sale_price: 80000,
+    created_at: '2025-03-01T09:00:00Z',
+    event_group_id: 1,
+  },
+  {
+    id: 2,
+    title: '여름 한정 프로모션',
+    description: '여름 시즌 인기 상품을 할인된 가격에 만나보세요.',
+    original_price: 120000,
+    sale_price: 95000,
+    created_at: '2025-06-10T10:30:00Z',
+    event_group_id: 2,
+  },
+  {
+    id: 3,
+    title: '가을 고객 감사 이벤트',
+    description: '가을을 맞아 고객님께 드리는 감사 혜택!',
+    original_price: null,
+    sale_price: 70000,
+    created_at: '2025-09-15T11:00:00Z',
+    event_group_id: 3,
+  },
+  {
+    id: 4,
+    title: '겨울 시즌 특별전',
+    description: '추운 겨울, 따뜻한 혜택을 준비했습니다.',
+    original_price: 90000,
+    sale_price: 75000,
+    created_at: '2025-12-01T08:00:00Z',
+    event_group_id: 4,
+  },
+  {
+    id: 5,
+    title: '블랙 프라이데이 핫딜',
+    description: '1년에 단 한 번, 역대급 할인!',
+    original_price: 200000,
+    sale_price: 120000,
+    created_at: '2025-11-25T00:00:00Z',
+    event_group_id: 5,
+  },
+  {
+    id: 6,
+    title: '연말 결산 초특가 이벤트',
+    description: null,
+    original_price: 150000,
+    sale_price: 110000,
+    created_at: '2025-12-20T14:00:00Z',
+    event_group_id: 6,
+  },
+  {
+    id: 7,
+    title: '신년 맞이 럭키딜',
+    description: '새해 첫 쇼핑을 특별한 가격으로!',
+    original_price: null,
+    sale_price: 85000,
+    created_at: '2026-01-01T00:00:00Z',
+    event_group_id: 7,
+  },
+  {
+    id: 8,
+    title: '발렌타인데이 한정 이벤트',
+    description: '사랑을 담아 준비한 발렌타인 한정 상품!',
+    original_price: 130000,
+    sale_price: 100000,
+    created_at: '2026-02-01T09:30:00Z',
+    event_group_id: 8,
+  },
+  {
+    id: 9,
+    title: '화이트데이 스페셜 프로모션',
+    description: '화이트데이를 기념하는 특별 혜택!',
+    original_price: 110000,
+    sale_price: 95000,
+    created_at: '2026-03-01T10:00:00Z',
+    event_group_id: 9,
+  },
+  {
+    id: 10,
+    title: '여름 준비 얼리버드 이벤트',
+    description: null,
+    original_price: 140000,
+    sale_price: 115000,
+    created_at: '2026-05-01T09:00:00Z',
+    event_group_id: 10,
+  },
+];
